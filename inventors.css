@@ -1,8 +1,23 @@
+/* bg : #070706;
+text #d1bea1
+para #c4beb6;
+card bg #1c352e
+card bg hover #344130
+grey : #19201e */
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #121212;
-  color: #fff;
+  background-color: #0f1518;
+  color: #d1bea1;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .hero {
@@ -13,21 +28,25 @@ body {
   font-weight: 600;
 }
 
-.hero-image {
-  width: 100%;
-  height: 300px;
+.banner {
+  width: 100vh;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .invention-table {
   width: 90%;
   margin: 40px auto;
   border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.05);
+  background: #19201e;
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
+}
+
+hr{
+  background-color: red;
 }
 
 .invention-table th,
@@ -38,30 +57,44 @@ body {
 }
 
 .invention-table th {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color:#1c352e;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.invention-table td{
+  color: #c4beb6;;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+
   gap: 20px;
   padding: 40px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.08);
+  /* background: rgba(255, 255, 255, 0.08); */
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c352e;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
+  transition: background-color 0.5s ease;
 
 }
 
 .card:hover {
   transform: translateY(-5px);
+  background-color: #344130;
 }
 
-.card h3 {
+.card-info h3 {
   margin-top: 0;
-  color: #ffe082;
+  color: #d1bea1;
+}
+
+.card-info p {
+  color: #c4beb6;
 }
