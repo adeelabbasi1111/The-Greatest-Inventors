@@ -85,3 +85,13 @@ footer {
   padding: 20px;
   background-color: #19201e;
 }
+
+.names{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
