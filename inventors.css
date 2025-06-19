@@ -34,6 +34,20 @@ body {
   border-radius: 10px;
   margin-bottom: 50px;
 }
+.intro p{
+  max-width: 80%;
+  align-self: center;
+  color: #c4beb6;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-content: center;
+}
+
+
 
 .invention-table {
   width: 90%;
